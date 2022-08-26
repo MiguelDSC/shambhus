@@ -31,12 +31,12 @@ window.addEventListener("scroll", () => {
     topLink.classList.remove("show-link");
   }
 
-  const navHeight = navbar.getBoundingClientRect().height;
-  if (window.scrollY > navHeight) {
-    navbar.classList.add("fixed-nav");
-  } else {
-    navbar.classList.remove("fixed-nav");
-  }
+  // const navHeight = navbar.getBoundingClientRect().height;
+  // if (window.scrollY > navHeight) {
+  //   navbar.classList.add("fixed-nav");
+  // } else {
+  //   navbar.classList.remove("fixed-nav");
+  // }
 });
 
 // scroll to the correct section
