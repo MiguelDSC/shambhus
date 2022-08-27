@@ -87,6 +87,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow-x: hidden;
 }
 ul {
   list-style-type: none;
@@ -198,11 +199,7 @@ p {
     width: 95vw;
   }
 }
-main {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-}
+
 /*
 =============== 
 Scroll
@@ -317,27 +314,35 @@ nav {
 /* hero */
 header {
   min-height: 100vh;
-  background: var(--main-color);
-  background-image: url("media/background.png");
+  width: 100%;
+
+  /* background-image: url("media/background.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
+  background-size: cover; */
+  /* text-align: center; */
 }
 .banner {
   min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  color: black;
+  justify-content: center;
+  opacity: 0.2;
+
+  /* color: black; */
 }
 
 .banner {
-  place-items: center;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* place-items: center;
+  text-align: center; */
 }
 .banner img {
-  width: 1000px;
-  min-height: 100vh;
+  width: var(--max-width);
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container h1 {
   color: black;
@@ -346,13 +351,17 @@ header {
 }
 
 .container {
+  margin: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .container p {
   color: black;
   max-width: 25rem;
+
   margin-bottom: 1.25rem;
 }
 
@@ -375,12 +384,9 @@ header {
 }
 #starters,
 #main,
+#about,
 #contact {
   height: 60vh;
-}
-#contact,
-#starters {
-  background: var(--clr-white);
 }
 
 footer {
@@ -470,8 +476,8 @@ footer p {
   margin-right: auto;
 }
 .container {
-  width: 80vw;
-  max-width: var(--fixed-width);
+  width: 100%;
+  /* max-width: var(--fixed-width); */
 }
 .project {
   background: var(--clr-white);
@@ -551,6 +557,31 @@ form {
   border: 2px solid var(--bugs-bunny);
 }
 
+#home {
+  background-image: url("media/deel\ 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: ;
+}
+#about {
+  background-image: url("media/deel2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#starter {
+  background-image: url("media/deel3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main {
+  background-image: url("media/deel4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 textarea {
   height: 150px;
   line-height: 150%;
@@ -587,3 +618,43 @@ textarea {
   justify-content: center;
   margin: auto;
 }
+
+#img-container {
+  position: relative;
+  height: 281px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+#img-container img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#img-container img.top:hover {
+  opacity: 0;
+}
+.test {
+  opacity: 0;
+}
+
+/* .outer-container {
+  width: 100%;
+
+  background-image: url("media/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* .outer-container { 
+  background-image: url("media/background.png"); /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-position: left; 
+} */
