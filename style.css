@@ -380,7 +380,7 @@ header {
   text-transform: uppercase;
 }
 .title span {
-  color: var(--clr-secondary);
+  /* color: var(--clr-secondary); */
 }
 #starters,
 #main,
@@ -467,6 +467,8 @@ footer p {
 .title {
   text-align: center;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 .underline {
   height: 0.25rem;
@@ -557,37 +559,6 @@ form {
   border: 2px solid var(--bugs-bunny);
 }
 
-#home {
-  background-image: url("media/deel\ 1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: ;
-}
-#about {
-  background-image: url("media/deel2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#starter {
-  background-image: url("media/deel3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#main {
-  background-image: url("media/deel4.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
-
 [type="submit"] {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 100%;
@@ -643,18 +614,17 @@ textarea {
   opacity: 0;
 }
 
-/* .outer-container {
+.outer-container {
   width: 100%;
 
   background-image: url("media/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
-/* .outer-container { 
-  background-image: url("media/background.png"); /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  object-position: left; 
-} */
+.underline {
+  width: 600px;
+  height: 2px;
+  background-color: grey;
+}
