@@ -96,8 +96,8 @@ a {
   text-decoration: none;
 }
 img:not(.logo) {
-  width: 100%;
-  height: 200px;
+  width: 80%;
+  /* height: 200px; */
 }
 img {
   display: block;
@@ -108,7 +108,7 @@ h2,
 h3,
 h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
@@ -207,7 +207,7 @@ Scroll
 */
 /* navbar */
 nav {
-  background: var(--secondary-color);
+  background: var(--main-color);;
   padding: 1rem 1.5rem;
 }
 /* fixed nav */
@@ -311,6 +311,46 @@ nav {
     color: var(--clr-white);
   }
 }
+@media screen and (min-width: 800px) {
+  nav {
+    background: transparent;
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    background: transparent;
+    color: var(--clr-white);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0;
+  }
+  .links a:hover {
+    color: var(--clr-white);
+  }
+}
 /* hero */
 header {
   min-height: 100vh;
@@ -338,12 +378,7 @@ header {
   /* place-items: center;
   text-align: center; */
 }
-.banner img {
-  width: var(--max-width);
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .container h1 {
   color: black;
   text-transform: uppercase;
@@ -377,7 +412,7 @@ header {
 /* sections and title */
 .title h2 {
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .title span {
   /* color: var(--clr-secondary); */
@@ -386,7 +421,7 @@ header {
 #main,
 #about,
 #contact {
-  height: 55vh;
+  height: 50vh;
 }
 
 footer {
@@ -396,7 +431,7 @@ footer {
 footer p {
   color: var(--clr-white);
   text-align: center;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   letter-spacing: var(--spacing);
   margin-bottom: 0;
 }
@@ -475,6 +510,7 @@ footer p {
   margin: auto;
   width: 60%;
   text-align: center;
+  padding: 70px 0;
 }
 .underline {
   height: 0.25rem;
